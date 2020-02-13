@@ -69,8 +69,30 @@ let getCityName=async(req,res)=>{
     });
 }
 
+let getPhoneNumber=async(req,res)=>{
+
+    let query=`select json_data->>'$.phone[0]' as phone from json_table`;
+
+    db.queryAsync(query)
+    .then(result=>{
+        res.send({
+            status:200,
+            message:'Data fetched successfully!',
+            data:result
+        })
+    })
+    .catch(err=>{
+        res.send({
+            status:500,
+            message:'Server Error',
+            data:err
+        })
+    });
+
+}
 module.exports={
     insertJson,
     getJsonData,
-    getCityName
+    getCityName,
+    getPhoneNumber
 }
