@@ -43,6 +43,25 @@ APIS:
     API: localhost:8000/get-all-json
  
     METHOD: GET
+    
+    Response DATA:
+    
+    
+             {
+             "status": 200,
+             "message": "Data fetched successfully!",
+             "data": [
+                 {
+                     "id": 1,
+                     "json_data": "{\"age\": 20, \"phone\": [\"9876543210\", \"9876543211\", \"9987654321\"], \"address\": {\"address\": {\"city\": \"maihar\", \"state\": \"M.P.\", \"country\": \"india\", \"currency\": \"rupee\", \"pin_code\": \"485771\", \"country_symbol\": \"IN\", \"currency_symbol\": \"INR\"}}, \"full_name\": {\"last_name\": \"chaurasiya\", \"first_name\": \"harsh\", \"middle_name\": \" \"}, \"last_name\": \"chaurasiya\", \"first_name\": \"harsh\"}"
+                 },
+                 {
+                     "id": 2,
+                     "json_data": "{\"age\": 21, \"phone\": [\"9876543210\", \"9876543211\", \"9987654321\"], \"address\": {\"address\": {\"city\": \"maihar\", \"state\": \"M.P.\", \"country\": \"india\", \"currency\": \"rupee\", \"pin_code\": \"485771\", \"country_symbol\": \"IN\", \"currency_symbol\": \"INR\"}}, \"full_name\": {\"last_name\": \"chaurasiya1\", \"first_name\": \"harsh1\", \"middle_name\": \" \"}, \"last_name\": \"chaurasiya1\", \"first_name\": \"harsh1\"}"
+                 }
+             ]
+         }
+ 
  
  3. Get City Name: 
  
